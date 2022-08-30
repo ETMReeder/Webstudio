@@ -1,20 +1,22 @@
-:root{
+:root {
     --background-color: #2F303A;
     --highlight-font: #2196F3;
     --white-font: #fff;
-    --light-gray:#757575;
+    --light-gray: #757575;
 
 
 }
-body{
+
+body {
     /* font-family: 'Open Sans', sans-serif; */
     /* font-family: 'Raleway', sans-serif; */
     font-family: 'Roboto', sans-serif;
     width: 1600px;
-    margin: 1px auto;
+    margin: 10px auto;
 
 }
-.header__bar{
+
+.header__bar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -22,7 +24,8 @@ body{
     margin-bottom: 20px;
 
 }
-.logo{
+
+.logo {
     font-family: 'Raleway';
     color: var(--highlight-font);
     font-weight: 700;
@@ -30,12 +33,14 @@ body{
     line-height: 31px;
 
 }
-.header__nav{
+
+.header__nav {
     display: flex;
     justify-content: space-around;
 
 }
-.header__nav__link{
+
+.header__nav__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,11 +49,14 @@ body{
     letter-spacing: 0.02em;
     margin-left: 15px;
     margin-right: 15px;
+    color: var(--light-gray);
 }
-a:hover{
+
+a:hover {
     color: var(--highlight-font);
 }
-.header__contact{
+
+.header__contact {
     display: flex;
     justify-content: flex-end;
     right: 10px;
@@ -58,13 +66,15 @@ a:hover{
     letter-spacing: 0.02em;
     margin-right: 15px;
 }
-.header__contact__info > a{
-    margin:  auto 15px;
+
+.header__contact__info>a {
+    margin: auto 15px;
     display: flex;
     flex-direction: row;
 }
-    /*terminada la barra */
-    /*header main section */
+
+/*terminada la barra */
+/*header main section */
 .header__main {
     background-color: var(--background-color);
     height: 400px;
@@ -73,18 +83,20 @@ a:hover{
     align-items: center;
     padding-top: 250px;
     border-radius: 13px;
-}   
-.header__main > h1{
+}
+
+.header__main>h1 {
     color: var(--white-font);
     font-weight: 900;
     font-size: 44px;
     line-height: 60px;
-        /* or 136% */
+    /* or 136% */
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-} 
-.indexbutton{
+}
+
+.indexbutton {
     background-color: var(--highlight-font);
     color: var(--background-color);
     font-family: 'Roboto', serif;
@@ -94,28 +106,37 @@ a:hover{
     font-size: 16px;
     line-height: 30px;
     text-align: center;
-    height: 50px;
-    top: 439px;
-    border-radius: 4px;
+    height: 42px;
+    top: 475px;
+    border-radius: 8px;
     cursor: pointer;
 }
+
 /* -------------- */
 /* pillars section */
 /* --------------- */
-.pilar__section{
+.pilar__section {
     height: 280px;
     display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.pilares {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.pilar {
+    display: flex;
     flex-direction: column;
-
-
+    width: 270px;
+    margin-left: 50px;
 }
-.pilar{
-     display: flex;
-     flex-direction: column;
-     width: 270px;
-     margin-left: 50px;
-}
-.pilar__title{
+
+.pilar__title {
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
@@ -123,54 +144,163 @@ a:hover{
     text-transform: uppercase;
     margin-bottom: 15px;
 }
-.pilar__text{
-   font-size: 400;
-   size: 14px;
-   line-height: 24px;
-   color: var(--light-gray);
+
+.pilar__text {
+    font-size: 400;
+    size: 11.5px;
+    line-height: 20px;
+    color: var(--light-gray);
 }
+
 /* pilar section ended */
 /*-------- ---- --------*/
 /* -----whatwedo section -------*/
 /*----------------------*/
-.whatwedo__title{
+.whatwedo__title {
     font-weight: 700;
     font-size: 36px;
     line-height: 42px;
     text-align: center;
     letter-spacing: 0.03em;
-
+    margin-bottom: 95px;
+    margin-top: 65px;
 }
-.techimg{
+
+.techimg {
     display: flex;
     justify-content: space-evenly;
 }
+
 /*  */
 /*  */
 /*  */
-.this__is__us{
+.this__is__us {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 150px;
 }
-.teammembers{
+
+.teammembers {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: baseline;
+    margin-bottom: 30px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    border: var(--light-gray);
+}
+
+.teammembers>div {
+    margin-right: 55px;
+
 
 }
-.teammembers > div{
-margin-right: 55px;
 
+.divn1 .divn2 .divn3 .divn4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    border: #757575;
 }
-.teammember_title{
+
+.teammember_title {
     font-family: Roboto;
     font-size: 36px;
     font-weight: 700;
     line-height: 42px;
     letter-spacing: 0.03em;
-    text-align: center;
     margin-top: 150px;
+    margin-left: 80px;
+}
+
+.teammember_name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    margin-left: 52px;
+}
+
+.teammember__job {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--light-gray);
+
+}
+
+.footer {
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 13px;
+    width: 1600px;
+    height: 252px;
+}
+
+.footer__info {
+    margin-top: 55px;
+    margin-left: 25px;
+    color: var(--white-font);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    /* or 171% */
+}
+
+.footer__link {
+    color: var(--light-gray);
+}
+
+/* button portafolio */
+.button__section {
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+
+}
+
+.button__section>button {
+    background-color: rgb(248, 247, 247);
+    color: var(--highlight-font);
+}
+
+.portimg {
+    width: 370px;
+    height: 404px;
+    border: #eeeeee;
+    border-bottom: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+}
+
+.padd {
+    padding-right: 30px;
+}
+
+.line1 {
+    display: flex;
+    flex-direction: row;
+    margin: 180px;
+}
+
+.line2 {
+    display: flex;
+    flex-direction: row;
+    margin: 180px;
+}
+
+.line3 {
+    display: flex;
+    flex-direction: row;
+    margin: 180px;
+    margin-bottom: 50px;
 }
