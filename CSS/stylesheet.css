@@ -269,6 +269,10 @@ a:hover {
 .button__section>button {
     background-color: rgb(248, 247, 247);
     color: var(--highlight-font);
+    border-color: var(--light-gray);
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
 }
 
 .portimg {
@@ -303,4 +307,7 @@ a:hover {
     flex-direction: row;
     margin: 180px;
     margin-bottom: 50px;
+}
+h5{
+    color: #757575;
 }
